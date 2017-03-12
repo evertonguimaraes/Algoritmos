@@ -37,7 +37,7 @@ public class CursoFerias {
 
             case 2: //TODO LER DADOS DA MATRICULA / REALIZAR MATRICULA
                 String nome, email;
-                String turno = null; // INICIALIZA COMO SUL PORQUE NAO REALIZA A LEITURA
+                String mensagemTurno = null; // INICIALIZA COMO SUL PORQUE NAO REALIZA A LEITURA
                 int matricula, idade, experienciaJava, experienciaAndroid;
                 double IRA;
                 boolean elegivel = false;
@@ -103,9 +103,23 @@ public class CursoFerias {
                     é elegível para realizar esse curso.
                 */
 
-
-
-
+                if (experienciaJava == 3 && experienciaAndroid > 2){
+                    mensagemTurno = "noite";
+                    elegivel = true;
+                }else{
+                    if ((experienciaJava == 2 || experienciaJava == 3) && experienciaAndroid > 1){
+                        mensagemTurno = "tarde";
+                        elegivel = true;
+                    }else{
+                        if (experienciaJava > 0){
+                            mensagemTurno = "manhã";
+                            elegivel = true;
+                        }else{
+                            mensagemTurno = "Voce nao eh elegivel para este curso. ";
+                            elegivel = false;
+                        }
+                    }
+                }
                 // TODO FIM
 
                 System.out.println("Informe seu nome: ");
@@ -118,7 +132,7 @@ public class CursoFerias {
                 if (elegivel){
                     System.out.println("Parabens, voce foi matriculado no curso");
                     System.out.printf("Matricula: %d", matricula);
-                    System.out.printf("Turno: %s", turno);
+                    System.out.printf("Turno: %s", mensagemTurno);
                 }else{
                     System.out.println("Voce NAO PODE PARTICIPAR DESTE CURSO.");
                 }
