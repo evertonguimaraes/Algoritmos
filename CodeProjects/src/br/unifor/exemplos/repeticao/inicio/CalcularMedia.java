@@ -20,7 +20,7 @@ public class CalcularMedia {
         cont = 1;
 
         while (cont <= n) {
-            System.out.print("Informe numero: ");
+            System.out.printf("Informe %d numero  :", cont);
             numero = scanner.nextDouble();
             soma = soma + numero;
             cont = cont + 1;
