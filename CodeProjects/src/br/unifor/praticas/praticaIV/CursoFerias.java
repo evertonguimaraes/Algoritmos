@@ -141,8 +141,6 @@ public class CursoFerias {
             case 3: //TODO SAI DO SISTEMA
                 System.out.println("Saindo do Programa....");
                 break;
-
         }
-
     }
 }
