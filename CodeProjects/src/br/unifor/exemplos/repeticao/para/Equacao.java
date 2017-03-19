@@ -9,21 +9,25 @@ public class Equacao {
     public static void main(String[] args) {
 
         // TODO Solução 01
+        int repeticoes = 0;
         for (int x = 0; x <= 1000; x++){
             for (int y = 0; y <= 1000; y++){
                 if (2*x - y == 0 && x % 2 == 1){
                     System.out.printf("(%d, %d)\n", x, y);
                 }
+                repeticoes++;
             }
         }
+        System.out.printf("Repeticoes: %d", repeticoes);
 
         // TODO Solução 02
-        for (int x = 1; x <= 1000; x = x + 2){
-            for (int y = 0; y <= 1000; y++){
-                if (2*x - y == 0){
-                    System.out.printf("(%d, %d)\n", x, y);
-                }
-            }
-        }
+
+//        for (int x = 1; x < 1000; x = x + 2){
+//            for (int y = 0; y <= 1000; y++){
+//                if (2*x - y == 0){
+//                    System.out.printf("(%d, %d)\n", x, y);
+//                }
+//            }
+//        }
     }
 }

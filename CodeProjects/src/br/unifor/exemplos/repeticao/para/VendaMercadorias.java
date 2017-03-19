@@ -7,7 +7,8 @@ import java.util.Scanner;
  * cada item, o preço de custo, o preço de venda e a quantidade vendida, calcula e mostra:
  * a) o custo total das mercadorias vendidas;
  * b) o faturamento total com a comercialização das mercadorias;
- * c) o lucro total auferido no período; d) e o maior lucro unitário.
+ * c) o lucro total auferido no período;
+ * d) e o maior lucro unitário.
  */
 public class VendaMercadorias {
 
@@ -15,11 +16,15 @@ public class VendaMercadorias {
 
         int n,quantidadeVenda;
         double precoCusto, precoVenda;
-        double totalCusto = 0, totalVenda = 0, totalLucro = 0, maior = 0;
+        double totalCusto = 0, totalVenda = 0, totalLucro = 0;
+
+        // Essa variavel diz qual o item que teve maiorLucro lucro
+        double maiorLucro = 0;
 
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Informe qtde itens: ");
+        // n = 10
         n =  scanner.nextInt();
 
         for (int cont = 1; cont <= n; cont++){
@@ -33,18 +38,24 @@ public class VendaMercadorias {
             System.out.print("Informe a quantidade vendida: ");
             quantidadeVenda = scanner.nextInt();
 
-            totalCusto = totalCusto + quantidadeVenda * precoCusto;
-            totalVenda = totalVenda + quantidadeVenda * precoVenda;
+            // Parcialmente vamos calcular o total de custo e o total de venda.
+            totalCusto = totalCusto + (quantidadeVenda * precoCusto);
+            totalVenda = totalVenda + (quantidadeVenda * precoVenda);
 
-            if (precoVenda - precoCusto > maior){
-                maior = precoVenda - precoCusto;
+            if (precoVenda - precoCusto > maiorLucro){
+                maiorLucro = precoVenda - precoCusto;
             }
         }
 
         totalLucro = totalVenda - totalCusto;
+        // Considerando todos os itens cadastrados
+        // a) o custo total das mercadorias vendidas;
         System.out.printf("Custo total: %4.2f\n", totalCusto);
+        // b) o faturamento total com a comercialização das mercadorias;
         System.out.printf("Faturamento total: %4.2f\n", totalVenda);
+        // c) o lucro total auferido no período;
         System.out.printf("Lucro total: %4.2f\n", totalLucro);
-        System.out.printf("Maior lucro unit.: %4.2f\n", maior);
+        // d) Considera somente o item que obteve maior lucro
+        System.out.printf("Maior lucro unit.: %4.2f\n", maiorLucro);
     }
 }
