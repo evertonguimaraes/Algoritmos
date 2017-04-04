@@ -126,11 +126,63 @@ public class ManipulacaoString {
         System.out.printf("num2toString: %.2f \n", num2toString);
         System.out.printf("num3toString: %d \n", num3toString);
 
+
+        // TODO Aula 03/04
+
+        String curso = "Desenvolvimento de aplicativos com Google Android";
         // TODO indexOf
+        System.out.printf("Indice do elemento 'a': %d %n", curso.indexOf('a'));
+        System.out.printf("Indice do elemento 'a': %d %n", curso.indexOf('G'));
+        System.out.printf("Indice do elemento 'a': %d %n", curso.indexOf('o'));
+
+        System.out.printf("Indice do elemento a partir de um indice FIXO: 'a': %d %n", curso.indexOf('o', 15));
+
+        String google = "Google";
+        System.out.printf("Indice do elemento 'aplicativos': %d %n", curso.indexOf(google));
 
         // TODO lastIndexOf
+        System.out.printf("Ultimo Indice do elemento 'o': %d %n", google.lastIndexOf('o'));
 
-        // TODO String Buffer
+        // TODO StringBuilder
+        StringBuilder builder1 = new StringBuilder();
+        StringBuilder builder2 = new StringBuilder(10); // capacidade
+        StringBuilder builder3 = new StringBuilder("Java");
+
+        System.out.printf("builder1 = %s %n", builder1);
+        System.out.printf("builder2 = %s %n", builder2);
+        System.out.printf("builder3 = %s %n", builder3);
+
+
+        // ensureCapacity
+        builder3.ensureCapacity(80); // garante que o StringBuilder tenha pelo menos a capacidade especificada.
+        System.out.printf("builder3 (capacity)= %s %n", builder3.capacity());
+
+        // capacity
+        System.out.printf("builder3 (capacity)= %s %n", builder3.capacity());
+
+        // lenght
+        System.out.printf("builder3 (lenght)= %s %n", builder3.length());
+
+
+        // setLenght
+        builder3.setLength(4); // aumenta ou diminui o comprimento de um StringBuffer
+        System.out.printf("builder3 (lenght)= %s %n", builder3.length());
+
+        // charAt
+        char caractere = builder3.charAt(0);
+
+        // setCharAt
+        builder3.setCharAt(0, 'j');
+
+        // reverse
+        builder3.reverse();
+        System.out.printf("reversa = %s %n", builder3.toString());
+
+        // append
+        StringBuilder builder4 = new StringBuilder("Linguagem de ");
+        StringBuilder builder5 = new StringBuilder("Programacao");
+        builder4.append(builder5);
+        System.out.printf("builder4 = %s %n", builder4.toString());
 
     }
 }
