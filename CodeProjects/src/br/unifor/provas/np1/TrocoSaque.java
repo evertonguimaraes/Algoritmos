@@ -1,4 +1,4 @@
-package br.unifor.provas.p1;
+package br.unifor.provas.np1;
 
 /**
  * Created by evertonguimaraes on 31/03/17.
