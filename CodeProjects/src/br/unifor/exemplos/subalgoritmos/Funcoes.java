@@ -20,6 +20,8 @@ public class Funcoes {
         System.out.println("0 - Sair");
         System.out.println("1 - verificar se um numero é par");
         System.out.println("2 - soma de numeros de 1 a N");
+        System.out.println("3 - calcular a potencia");
+        System.out.println("4 - calcular o valor em um intervalor de numeros");
 
         int opcao = entrada.nextInt();
         do {
@@ -45,6 +47,27 @@ public class Funcoes {
                     double expoente = entrada.nextDouble();
                     Subalgoritmos.imprime(String.valueOf(potencia(base, expoente)));
 
+                    break;
+                case 4:
+                    System.out.println("Digite um numero de inicio.");
+                    int inicio =  entrada.nextInt();
+
+                    System.out.println("Digite um numero de fim");
+                    int fim = entrada.nextInt();
+
+                    // validaçano caso o usuário informe entradas incorretas
+                    if(fim < inicio){
+                        int aux =  inicio;
+                        inicio = fim;
+                        fim = aux;
+                    }
+
+                    for (int i = inicio; i <= fim; i++){
+                        System.out.printf("Fatorial de %d: %d %n", i, fatorial(i));
+                    }
+
+                    break;
+
                 default:
                     System.out.printf("Opcao Invalida. Tente outra vez...");
 
@@ -55,7 +78,6 @@ public class Funcoes {
     }
 
     // funcao potencia
-
     static double potencia (double base, double expoente){
         double potencia = 1;
         for (int i = 1; i < expoente; i++){
@@ -65,7 +87,7 @@ public class Funcoes {
         return potencia;
     }
 
-    // funcao
+    // funcao soma1N
     static int soma1N() {
         int numero, soma = 0;
         System.out.println("Digite um numero qualquer. ");
@@ -78,7 +100,7 @@ public class Funcoes {
         return soma;
     }
 
-    // procedimento
+    // procedimento case 1
     static void case1(){
         int numero = 0;
         boolean opcaoErrada = false;
@@ -103,4 +125,18 @@ public class Funcoes {
         }
     }
 
+    static long fatorial(int n){
+
+        long fatorial = 0;
+        if( n <= 0){
+            System.out.printf("Nao foi possivel calcular o fatorial de %d %n", n);
+        }else{
+            fatorial = 1;
+            for (int i = 1; i<= n; i++){
+                fatorial = fatorial * i;
+            }
+        }
+
+        return fatorial;
+    }
 }
