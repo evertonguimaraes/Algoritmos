@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b1e0b3a8-07a4-4173-999b-0327e5289242" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/br/unifor/praticas/praticaVII/Questao03.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/br/unifor/praticas/praticaVII/Questao04.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -46,19 +46,32 @@
       <file leaf-file-name="Questao02.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/br/unifor/praticas/praticaVII/Questao02.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
-              <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+            <state relative-caret-position="351">
+              <caret line="45" column="5" lean-forward="true" selection-start-line="38" selection-start-column="4" selection-end-line="45" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Questao03.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Questao03.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/br/unifor/praticas/praticaVII/Questao03.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="27" column="66" lean-forward="false" selection-start-line="27" selection-start-column="66" selection-end-line="27" selection-end-column="66" />
+            <state relative-caret-position="440">
+              <caret line="36" column="32" lean-forward="false" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Questao04.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/br/unifor/praticas/praticaVII/Questao04.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="233">
+              <caret line="58" column="9" lean-forward="true" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
+              <folding>
+                <element signature="method#loadMatriz#0;class#Questao04#0" expanded="false" />
+                <element signature="method#printMatriz#0;class#Questao04#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -83,7 +96,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/br/unifor/exemplos/repeticao/para/SaidaFormatadaS1.java" />
         <option value="$PROJECT_DIR$/src/br/unifor/exemplos/repeticao/para/SaidaFormatadaS2.java" />
         <option value="$PROJECT_DIR$/src/br/unifor/exemplos/repeticao/inicio/CalcularMedia.java" />
         <option value="$PROJECT_DIR$/src/br/unifor/exemplos/repeticao/inicio/DivisivelPorTres.java" />
@@ -134,6 +146,7 @@
         <option value="$PROJECT_DIR$/src/br/unifor/praticas/praticaVII/Questao01.java" />
         <option value="$PROJECT_DIR$/src/br/unifor/praticas/praticaVII/Questao02.java" />
         <option value="$PROJECT_DIR$/src/br/unifor/praticas/praticaVII/Questao03.java" />
+        <option value="$PROJECT_DIR$/src/br/unifor/praticas/praticaVII/Questao04.java" />
       </list>
     </option>
   </component>
@@ -839,12 +852,12 @@
       <workItem from="1493815494359" duration="4120000" />
       <workItem from="1494592045983" duration="3352000" />
       <workItem from="1494851897815" duration="331000" />
-      <workItem from="1495232213247" duration="2328000" />
+      <workItem from="1495232213247" duration="3945000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63628000" />
+    <option name="totallyTimeSpent" value="65245000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -857,6 +870,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="873" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -868,7 +882,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="1.0" sideWeight="0.5040733" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32973805" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33674777" sideWeight="0.49592668" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33674777" sideWeight="0.49592668" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32973805" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -974,13 +988,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/br/unifor/praticas/praticaIV/CursoFerias.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/br/unifor/exemplos/selecao/composta/Par.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -1311,19 +1318,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/unifor/praticas/praticaVII/Questao02.java">
+    <entry file="file://$PROJECT_DIR$/src/br/unifor/praticas/praticaVII/Questao03.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+        <state relative-caret-position="440">
+          <caret line="36" column="32" lean-forward="false" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/unifor/praticas/praticaVII/Questao03.java">
+    <entry file="file://$PROJECT_DIR$/src/br/unifor/praticas/praticaVII/Questao02.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="27" column="66" lean-forward="false" selection-start-line="27" selection-start-column="66" selection-end-line="27" selection-end-column="66" />
+        <state relative-caret-position="351">
+          <caret line="45" column="5" lean-forward="true" selection-start-line="38" selection-start-column="4" selection-end-line="45" selection-end-column="5" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/unifor/praticas/praticaVII/Questao04.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="58" column="9" lean-forward="true" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
+          <folding>
+            <element signature="method#loadMatriz#0;class#Questao04#0" expanded="false" />
+            <element signature="method#printMatriz#0;class#Questao04#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
